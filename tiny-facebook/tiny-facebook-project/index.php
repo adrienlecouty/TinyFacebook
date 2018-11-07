@@ -1,7 +1,7 @@
 <?php
 
 include("config/config.php");
-include("config/bd.php"); // commentaire
+include("config/bd.php"); // Ajout de la base de donnee
 include("divers/balises.php");
 include("config/actions.php");
 include("config/fonctionhelper.php");
