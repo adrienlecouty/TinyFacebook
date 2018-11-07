@@ -25,6 +25,7 @@ $q = $pdo->prepare($sql);
 $q->execute();
 $pasamis=false;
 $notfound=false;
+$listeFriend=[];
 //Creating unordered list to display result.
  
  
@@ -45,7 +46,7 @@ $notfound=false;
 
             <?php
 
-            $sql = "SELECT login FROM user u INNER JOIN friends f on f.idfriend = u.id WHERE f.iduser = ?"; //Renvoie liste des nom AMIS de la personne connecté 
+            $sql = "SELECT login FROM user u INNER JOIN friends f on f.idfriend = u.id WHERE f.iduser = ? AND f.isvalidate=1"; //Renvoie liste des nom AMIS de la personne connecté 
             $q = $pdo->prepare($sql);
             $q->execute(array($_SESSION["id"]));
             while ($result = $q->fetch()){ 

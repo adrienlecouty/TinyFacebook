@@ -13,4 +13,6 @@ $listeDesActions = array(
     "upload" => "traitement/upload.php",
     "addfriendaction" => "traitement/addfriendaction.php",
     "delfriendaction" => "traitement/delfriendaction.php",
+    "acceptfriendaction" => "traitement/acceptfriendaction.php",
+    "refusefriendaction" => "traitement/refusefriendaction.php",
 );

@@ -36,7 +36,7 @@ $(document).ready(function () {
 
                 //Data will be sent to "ajax.php".
 
-                url: "/tiny-facebook/tiny-facebook-project/traitement/searchfriend.php",
+                url: "/TinyFacebook/tiny-facebook/tiny-facebook-project/traitement/searchfriend.php",
 
                 //Data, that will be sent to "ajax.php".
 
